@@ -55,7 +55,7 @@
 
 /* Medium breakpoint */
 @media (max-width: 767.98px) {
-    .header-top-align-end {
+    .header-top-align-start {
         display: none;
     }
 

@@ -9,8 +9,9 @@
 }
 
 :root {
-    --primary-color: #F7941D;
+    /* --primary-color: #F7941D; */
     --secondary-color: #eb3e32;
+    --primary-color: var(--secondary-color);
 }
 
 html {
