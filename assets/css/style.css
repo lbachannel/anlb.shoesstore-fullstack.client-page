@@ -404,7 +404,7 @@
 .header.shop .main-category {
     position: absolute;
     left: 0;
-    top: 43px;
+    top: 42px;
     z-index: 1;
 
     background: #fff;
@@ -525,4 +525,16 @@
 /* Medium breakpoint menu */
 .header.shop .shopping-cart .side-menu__icon {
     display: none;
+}
+
+/* Header sticky */
+.header .header-inner{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.hide-category .main-category {
+    opacity: 0;
+    visibility: hidden;
 }
