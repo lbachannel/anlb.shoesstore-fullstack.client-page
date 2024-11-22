@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/themify-icons.css">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/font-awesome.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -76,20 +77,20 @@
                     <div class="col-2 col-lg-6">
                         <div class="shopping-cart">
                             <!-- Search input icon [responsive] area -->
-                            <button class="btn search-icon js-toggle" type="button" toggle-target="#delete-confirm">
+                            <button class="btn search-icon js-toggle" type="button" toggle-target="#header-search">
                                 <i class="ti-search"></i>
                             </button>
                             <!-- favourite & shopping card icons -->
-                            <a class="heart__icon-link" href="" class="btn">
+                            <a class="btn heart__icon-link" href="">
                                 <i class="fas fa-heart text-primary"></i>
                                 <span class="badge text-secondary border rounded-circle" style="padding-bottom: 2px;">0</span>
                             </a>
-                            <a class="shopping-cart__icon-link" href="" class="btn">
+                            <a class="btn shopping-cart__icon-link" href="">
                                 <i class="fas fa-shopping-cart text-primary"></i>
                                 <span class="badge text-secondary border rounded-circle" style="padding-bottom: 2px;">0</span>
                             </a>
-                            <!-- Medium breakpoint menu -->
-                            <button class="btn medium-menu js-toggle" type="button" toggle-target="#medium-menu">
+                            <!-- Tablet: show more icon -->
+                            <button class="btn side-menu__icon js-toggle" type="button" toggle-target="#side-menu">
                                 <i class="ti-menu"></i>
                             </button>
                         </div>
@@ -124,9 +125,10 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- navbar -->
+                    
                     <div class="col-9 col-lg-12">
                         <div class="menu-area">
+                            <!-- navbar -->
                             <nav class="navbar navbar-expand-lg">
                                 <div class="navbar-collapse">
                                     <div class="nav-inner">
@@ -156,12 +158,12 @@
     <script src="./assets/js/script.js"></script>
 
     <!-- Modal search input [tablet & mobile] -->
-    <div id="delete-confirm" class="anlb-modal anlb-modal--small hide">
+    <div id="header-search" class="anlb-modal anlb-modal--small hide">
         <div class="anlb-modal__content">
             <div class="anlb-modal__top">
                 <p class="anlb-modal__top-left">Start typing and press Enter to search</p>
                 <!-- button close -->
-                <button class="anlb-modal__btn js-toggle" toggle-target="#delete-confirm">
+                <button class="anlb-modal__btn js-toggle" toggle-target="#header-search">
                     <i class="fa fa-times"></i>
                 </button>
             </div>
@@ -172,17 +174,17 @@
             </form>
             <!-- button close -->
             <div class="anlb-modal__bottom">
-                <button class="btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                <button class="btn js-toggle" toggle-target="#header-search">Cancel</button>
             </div>
         </div>
-        <div class="anlb-modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+        <div class="anlb-modal__overlay js-toggle" toggle-target="#header-search"></div>
     </div>
 
     <!-- Modal side menu -->
-    <div id="medium-menu" class="side-menu hide">
-        <div class="medium-menu__content">
+    <div id="side-menu" class="side-menu hide">
+        <div class="side-menu__content">
             <div class="anlb-header">
-                <button class="btn-menu-close js-toggle" toggle-target="#medium-menu">
+                <button class="btn-menu-close js-toggle" toggle-target="#side-menu">
                     MENU <i class="fa fa-chevron-left"></i>
                 </button>
             </div>
@@ -222,7 +224,7 @@
                 </div>
             </div>
         </div>
-        <div class="anlb-modal__overlay js-toggle" toggle-target="#medium-menu"></div>
     </div>
+    <div class="anlb-modal__overlay js-toggle" toggle-target="#side-menu"></div>
 </body>
 </html>
