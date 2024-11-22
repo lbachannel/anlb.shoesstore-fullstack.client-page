@@ -100,6 +100,20 @@
         height: auto;
         /* transform: translateY(0px); */
     }
+
+    /* Slide show */
+    .slideshow__item {
+        padding-top: 50%;
+    }
+
+    .slideshow__number {
+        font-size: 1.4rem;
+        line-height: 1.42;
+    }
+
+    .slideshow__slider {
+        border-width: 3px;
+    }
 }
 
 @media (max-width: 679.98px) {
