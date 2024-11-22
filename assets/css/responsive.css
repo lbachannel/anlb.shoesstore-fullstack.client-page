@@ -89,6 +89,17 @@
         visibility: visible;
     }
 
+    /* Dropdown side-menu */
+    .menu-item-has-children .sub-menu {
+        height: 0;
+        overflow: hidden;
+        transform: translateY(0px);
+        transition: height 0.3s ease, transform 0.3s ease;
+    }
+    .menu-item-has-children--active .sub-menu {
+        height: auto;
+        /* transform: translateY(0px); */
+    }
 }
 
 @media (max-width: 679.98px) {
