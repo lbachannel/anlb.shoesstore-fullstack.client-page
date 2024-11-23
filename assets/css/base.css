@@ -16,6 +16,10 @@
     --product-card-shadow: rgba(237, 237, 246, 0.2);
 
     --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    --footer-primary-bg-color: #FFD333;
+    --footer-text-primary: #F7941D;
+    --footer-text-secondary: #F5F5F5;
 }
 
 html {
