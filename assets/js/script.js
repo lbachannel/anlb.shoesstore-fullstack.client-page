@@ -1,5 +1,3 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 document.addEventListener("DOMContentLoaded", initJsToggle);
 function initJsToggle() {
     $$(".js-toggle").forEach((button) => {
@@ -80,57 +78,5 @@ window.addEventListener("DOMContentLoaded", () => {
                 subMenu.style.height = "0"; // Close all submenus.
             });
         }
-    });
-});
-
-// handle navbar position sticky when scroll down
-window.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector(".header-inner");
-    const threshold = 100; // Ngưỡng ẩn Categories
-    const revealThreshold = 80; // Ngưỡng hiện lại Categories khi cuộn lên
-    let lastScrollY = window.scrollY;
-    let isHovering = false; // Trạng thái khi hover chuột vào header
-
-    // Kiểm tra trạng thái ban đầu khi tải trang
-    if (window.scrollY > threshold) {
-        header.classList.add("hide-category");
-    }
-
-    // Lắng nghe sự kiện hover vào header
-    header.addEventListener("mouseenter", () => {
-        isHovering = true;
-        header.classList.remove("hide-category");
-    });
-
-    // Lắng nghe sự kiện di chuột ra khỏi header
-    header.addEventListener("mouseleave", () => {
-        isHovering = false;
-
-        // Chỉ ẩn Categories nếu vượt ngưỡng threshold
-        if (window.scrollY > threshold) {
-            header.classList.add("hide-category");
-        }
-    });
-
-    // Lắng nghe sự kiện scroll
-    window.addEventListener("scroll", () => {
-        const currentScrollY = window.scrollY;
-
-        if (!isHovering) {
-            if (currentScrollY > threshold) {
-                if (currentScrollY > lastScrollY) {
-                    // Cuộn xuống -> Ẩn Categories
-                    header.classList.add("hide-category");
-                } else if (currentScrollY < revealThreshold) {
-                    // Cuộn lên về gần đỉnh -> Hiện Categories
-                    header.classList.remove("hide-category");
-                }
-            } else {
-                // Nếu cuộn chưa đủ ngưỡng, luôn hiển thị Categories
-                header.classList.remove("hide-category");
-            }
-        }
-
-        lastScrollY = currentScrollY;
     });
 });
