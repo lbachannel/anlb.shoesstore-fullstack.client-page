@@ -903,6 +903,10 @@
     border-top: 1px solid #dee2e6;
 }
 
+.footer-copyright__desc {
+    line-height: 1.5;
+}
+
 .fa-twitter {
     color: #479eed;
 }
