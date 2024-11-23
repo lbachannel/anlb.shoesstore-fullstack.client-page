@@ -707,6 +707,7 @@
     color: var(--footer-text-secondary);
 }
 
+.footer .footer-heading-right,
 .footer .footer-heading-left {
     user-select: none;
 }
@@ -735,14 +736,14 @@
     margin-bottom: 25px;
 }
 
-.footer-address-right,
-.footer-email-right {
+.footer-address-left,
+.footer-email-left {
     margin-bottom: 15px;
 }
 
-.footer-address-right i,
-.footer-email-right i,
-.footer-phone-right i {
+.footer-address-left i,
+.footer-email-left i,
+.footer-phone-left i {
     margin-right: 7px;
 }
 
