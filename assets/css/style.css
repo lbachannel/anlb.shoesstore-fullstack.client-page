@@ -593,12 +593,17 @@
 /* Slide show */
 .slideshow__container {
     margin-top: 0;
+
+    position: relative;
+    overflow: hidden;
 }
 
 .slideshow__inner {
     display: flex;
-    overflow: hidden;
     margin: 0 auto;
+
+    width: 100%;
+    transition: transform 1s ease-in-out;
 }
 
 .slideshow__item {
@@ -617,6 +622,28 @@
     object-fit: cover;
 }
 
+.slideshow__indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background: #000;
+}
 
 /* Product card */
 .product-card {
