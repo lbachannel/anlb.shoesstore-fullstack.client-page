@@ -30,7 +30,7 @@ function initJsToggle() {
 
 // menu dropdown
 window.addEventListener("DOMContentLoaded", () => {
-    const links = $$(".js-dropdown-list > li > a");
+    const links = $$(".js-dropdown-list > li > button");
     // Get the container element of the menu
     const menuContainer = document.querySelector(".js-dropdown-list");
 
