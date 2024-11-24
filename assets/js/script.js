@@ -45,9 +45,11 @@ window.addEventListener("DOMContentLoaded", () => {
             const allItems = $$(".js-dropdown-list > li");
             allItems.forEach((otherItem) => {
                 const otherSubMenu = otherItem.querySelector(".sub-menu");
-                if (otherItem !== item) {
-                    otherItem.classList.remove("menu-item-has-children--active");
-                    otherSubMenu.style.height = '0'; // Close other submenus
+                if (otherSubMenu !== null) {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove("menu-item-has-children--active");
+                        otherSubMenu.style.height = '0'; // Close other submenus
+                    }
                 }
             });
 
@@ -74,8 +76,10 @@ window.addEventListener("DOMContentLoaded", () => {
             const allItems = $$(".js-dropdown-list > li");
             allItems.forEach(item => {
                 const subMenu = item.querySelector(".sub-menu");
-                item.classList.remove("menu-item-has-children--active");
-                subMenu.style.height = "0"; // Close all submenus.
+                if (subMenu !== null) {
+                    item.classList.remove("menu-item-has-children--active");
+                    subMenu.style.height = "0"; // Close all submenus.
+                }
             });
         }
     });
