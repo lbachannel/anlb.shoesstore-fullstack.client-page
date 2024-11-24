@@ -22,7 +22,6 @@
     .header.shop .shopping-cart .search-icon {
         display: inline-block;
         margin-right: 5px;
-        color: var(--primary-color);
     }
 
     .header.shop .shopping-cart .search-icon:hover {
@@ -61,8 +60,8 @@
     }
 
     .header .logo .logo__heading {
-        font-size: 2.5rem;
-        font-weight: 900;
+        font-size: 2rem;
+        font-weight: 800;
     }
 
     .header-top-align-start {
