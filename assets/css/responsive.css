@@ -165,6 +165,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    .footer-copyright__desc {
+        text-align: center;
+    }
 }
 
 @media (max-width: 679.98px) {
