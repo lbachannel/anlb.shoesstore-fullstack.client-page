@@ -124,7 +124,7 @@
 	width: 50px;
 
 	color: #fff;
-	background: #333333;
+	background: #000;
 	border-radius: 0 5px 5px 0;
     font-size: 1.7rem;
     line-height: 1;
@@ -578,6 +578,7 @@
 }
 
 .home__heading {
+    color: #fff;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.41;
@@ -856,6 +857,8 @@
     font-weight: 400;
     line-height: 1.5;
     padding: 5px 90px 5px 10px;
+    border: 1px solid #0000;
+    border-radius: 5px;
     width: 100%;
 
     background: #fff;
@@ -865,6 +868,7 @@
     position: absolute;
 	right: 0;
 	top: 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -872,9 +876,17 @@
     height: 100%;
     min-width: 80px;
 
-	color: #000;
-	background: var(--footer-primary-bg-color);
+	border: 1px solid #0000;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(#000, #000000bb) padding-box, linear-gradient(
+        var(--angle),
+        #070707,
+        #fff
+        )   border-box;
+    animation: 8s rotate linear infinite;
+
     font-size: 1.6rem;
+    color: #fff;
     line-height: 1;
     transition: opacity 0.25s;
 }
@@ -894,15 +906,34 @@
 }
 
 .footer-social-btn {
-    width: 40px;
-    height: 40px;
-    background: var(--footer-primary-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0000;
+    border-radius: 5px;
 
-    color: #000;
+    background: linear-gradient(#000, #000000bb) padding-box, linear-gradient(
+        var(--angle),
+        #070707,
+        #fff
+        )   border-box;
+    animation: 8s rotate linear infinite;
+
     transition: opacity 0.25s;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+  
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
 .footer-social-btn:hover {

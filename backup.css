@@ -1,0 +1,44 @@
+.footer-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative; /* Để tạo hiệu ứng ánh sáng bao quanh */
+    overflow: hidden;
+
+    /* Hiệu ứng bóng */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), -3px -3px 5px rgba(50, 50, 50, 0.2);
+    transition: transform 0.2s;
+}
+
+/* Tạo hiệu ứng viền ánh sáng */
+.footer-social-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.2) 50%);
+    z-index: -1; /* Đưa hiệu ứng ra phía sau */
+    animation: rotate-light 2s linear infinite; /* Ánh sáng xoay liên tục */
+}
+
+/* Hiệu ứng khi hover */
+.footer-social-btn:hover {
+    transform: scale(1.1); /* Phóng to nhẹ */
+}
+
+/* Keyframes cho hiệu ứng xoay */
+@keyframes rotate-light {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

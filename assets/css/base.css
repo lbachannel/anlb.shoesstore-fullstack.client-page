@@ -29,6 +29,8 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    background-image: url("../images/background/background.png");
+    background-repeat: repeat;
 }
 
 /* reset tags style default */
