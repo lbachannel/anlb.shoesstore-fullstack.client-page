@@ -69,7 +69,20 @@
 
 /* Logo */
 .header .logo {
-    width: 125px;
+    width: 25px;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(53%) saturate(662%) hue-rotate(351deg) brightness(95%) contrast(103%);
+}
+
+.header .logo .logo__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.header .logo .logo__heading {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .header .logo .header__logo-img {
@@ -261,7 +274,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: #fff;
     padding: 0 40px;
     line-height: 3.6;
@@ -292,11 +305,11 @@
 }
 
 .anlb-body .info-items > ul > li > a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .anlb-body .info-items > ul > li > a > i {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .menu-item-has-children a {
@@ -325,7 +338,7 @@
 
 .mobile-menu-items .nav-menu .menu-item-has-children--active > a,
 .mobile-menu-items .nav-menu .menu-item-has-children a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
