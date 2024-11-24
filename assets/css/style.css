@@ -423,7 +423,36 @@
     background: #fff;
     width: 100%;
     box-shadow: 0px 5px 15px #0000000a;
+
+    opacity: 0;
+	visibility: hidden;
+	transform-origin: 0 0 0;
+	transform: scaleY(0.2);
+	transition: all 0.3s ease 0s;
 }
+
+.header.shop .all-category:hover .main-category {
+    opacity: 1;
+	visibility: visible;
+    transform: translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header.shop .main-category li {
     display: block;
