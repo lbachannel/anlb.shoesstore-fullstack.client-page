@@ -299,7 +299,7 @@
     color: var(--secondary-color);
 }
 
-.menu-item-has-children button {
+.menu-item-has-children a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -309,7 +309,6 @@
     position: relative;
 }
 
-.mobile-menu-items .nav-menu .menu-item-has-children button,
 .mobile-menu-items .nav-menu .menu-item-has-children a {
     display: flex;
     width: 100%;
@@ -324,10 +323,10 @@
     transition: color 0.25s;
 }
 
-.mobile-menu-items .nav-menu .menu-item-has-children--active > button,
-.mobile-menu-items .nav-menu .menu-item-has-children button:hover,
+.mobile-menu-items .nav-menu .menu-item-has-children--active > a,
 .mobile-menu-items .nav-menu .menu-item-has-children a:hover {
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .mobile-menu-items .menu-item-has-children i {
