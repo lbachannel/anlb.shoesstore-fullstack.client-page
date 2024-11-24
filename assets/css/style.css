@@ -895,35 +895,6 @@
     opacity: 0.9;
 }
 
-.footer-socials-heading {
-    margin-bottom: 20px;
-}
-
-.footer-socials-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-social-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #0000;
-    border-radius: 5px;
-
-    background: linear-gradient(#000, #000000bb) padding-box, linear-gradient(
-        var(--angle),
-        #070707,
-        #fff
-        )   border-box;
-    animation: 8s rotate linear infinite;
-
-    transition: opacity 0.25s;
-}
-
 @keyframes rotate {
     to {
         --angle: 360deg;
@@ -936,8 +907,55 @@
     inherits: false;
 }
 
+.footer-socials-heading {
+    margin-bottom: 20px;
+}
+
+.footer-socials-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), -3px -3px 5px rgba(50, 50, 50, 0.2);
+    transition: transform 0.2s;
+}
+
+.footer-social-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.2) 50%);
+    z-index: -1;
+    animation: rotate-light 2s linear infinite;
+}
+
 .footer-social-btn:hover {
-    opacity: 0.9;
+    transform: scale(1.1); 
+}
+
+@keyframes rotate-light {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .footer-copyright {
