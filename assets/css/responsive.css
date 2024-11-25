@@ -22,6 +22,7 @@
     .header.shop .shopping-cart .search-icon {
         display: inline-block;
         margin-right: 5px;
+        color: #fff;
     }
 
     .header.shop .shopping-cart .search-icon:hover {
@@ -54,12 +55,18 @@
 
 /* Medium breakpoint */
 @media (max-width: 767.98px) {
+    /* shopping-cart & favourite quantity color */
+    .text-secondary,
+    .header .list-main li i {
+        color: #000;
+    }
+
     /* Logo */
     .header .logo {
         width: 20px;
     }
 
-    .header .logo .logo__heading {
+    .header .logo__heading {
         font-size: 2rem;
         font-weight: 800;
     }
@@ -80,8 +87,8 @@
     /* show menu__icon */
     .header.shop .shopping-cart .side-menu__icon {
         display: inline-block;
-        color: var(--primary-color);
         padding-right: 0;
+        color: #fff;
     }
 
     /**

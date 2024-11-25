@@ -74,11 +74,11 @@ b, strong {
 }
 
 .text-primary {
-    color: var(--primary-color);
+    color: var(--footer-primary-bg-color);
 }
 
 .text-secondary {
-    color: #000;
+    color: #fff;
 }
 
 .rounded-circle {

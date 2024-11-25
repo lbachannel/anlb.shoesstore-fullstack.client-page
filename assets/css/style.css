@@ -1,10 +1,6 @@
 /*======================================
 	01. Header CSS
 ========================================*/
-/* Header */
-.header {
-    background: #fff;
-}
 /* Topbar */
 .topbar {
 	background: #fff;
@@ -47,7 +43,7 @@
 }
 
 .header .list-main li a:hover{
-	color:var(--primary-color);
+	color: var(--primary-color);
 }
 
 
@@ -73,16 +69,21 @@
     filter: brightness(0) saturate(100%) invert(60%) sepia(53%) saturate(662%) hue-rotate(351deg) brightness(95%) contrast(103%);
 }
 
-.header .logo .logo__link {
+.header .logo__link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 10px;
 }
 
-.header .logo .logo__heading {
+.header .logo__heading {
+    filter: none;
     font-size: 3rem;
     font-weight: 900;
+
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, var(--primary-color), var(--footer-primary-bg-color));
 }
 
 .header .logo .header__logo-img {
@@ -137,15 +138,24 @@
 	width: 50px;
 
 	color: #fff;
+    border: 1px solid #0000;
 	background: #000;
 	border-radius: 0 5px 5px 0;
     font-size: 1.7rem;
     line-height: 1;
+
+    background: linear-gradient(#000, #000000bb) padding-box, linear-gradient(
+        var(--angle),
+        #070707,
+        #fff
+        )   border-box;
+    animation: 8s rotate linear infinite;
+
+    transition: opacity 0.25s;
 }
 
 .header .search-bar .btn:hover{
-	color:#fff;
-	background: var(--primary-color);
+	opacity: 0.9;
 }
 
 /* search input icon [tablet] + modal toggle search input */
@@ -378,7 +388,7 @@
     display: inline-block;
     padding: 0.25em 0.4em;
     font-size: 75%;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
@@ -450,23 +460,6 @@
 	visibility: visible;
     transform: translateY(0px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header.shop .main-category li {
     display: block;
