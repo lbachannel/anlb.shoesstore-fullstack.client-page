@@ -1,14 +1,20 @@
 /* XXL breakpoint */
 @media (max-width: 1399.98px) {
     .header.shop .sub-category {
-        left: 256px;
+        left: 255px;
     }
 }
 
 /* XL breakpoint */
 @media (max-width: 1199.98px) {
     .header.shop .sub-category {
-        left: 211px;
+        left: 210px;
+        top: -8px;
+    }
+
+    .header.shop .main-category li a {
+        margin: 8px;
+        padding: 5px;
     }
 }
 
