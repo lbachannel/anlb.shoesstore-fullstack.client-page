@@ -423,6 +423,7 @@
 .header.shop .all-category {
     position: relative;
     background: var(--footer-primary-bg-color);
+    cursor: pointer;
 }
 
 .header.shop .category-heading {
@@ -431,6 +432,7 @@
     font-size: 1.6rem;
     color: #000;
     padding: 10px 15px;
+    user-select: none;
 }
 
 .header.shop .category-heading i {
