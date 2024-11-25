@@ -520,7 +520,7 @@
 }
 
 .header.shop .main-category li a:hover{
-    background: #ffd3335e;
+    background: linear-gradient(90deg, #ffd33379, #ffd3335e);
 }
 
 /* navbar - menu */
@@ -594,7 +594,7 @@
 
 .navbar__sub-item:hover .navbar__sub-item-link {
     color:#000;
-	background: #ffd3335e;
+	background: linear-gradient(90deg, #ffd33379, #ffd3335e);
 }
 
 /* Medium breakpoint menu */
