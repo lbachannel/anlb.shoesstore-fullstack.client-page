@@ -284,8 +284,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: var(--footer-primary-bg-color);
+    color: #000;
     padding: 0 40px;
     line-height: 3.6;
     font-size: 1.6rem;
@@ -315,11 +315,11 @@
 }
 
 .anlb-body .info-items > ul > li > a:hover {
-    color: var(--primary-color);
+    color: var(--footer-primary-bg-color);
 }
 
 .anlb-body .info-items > ul > li > a > i {
-    color: var(--primary-color);
+    color: var(--footer-primary-bg-color);
 }
 
 .menu-item-has-children a {
@@ -348,7 +348,7 @@
 
 .mobile-menu-items .nav-menu .menu-item-has-children--active > a,
 .mobile-menu-items .nav-menu .menu-item-has-children a:hover {
-    color: var(--primary-color);
+    color: var(--footer-primary-bg-color);
     cursor: pointer;
 }
 
