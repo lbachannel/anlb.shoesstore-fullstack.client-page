@@ -92,8 +92,9 @@
 
 /* Header Middle: logo, search input [pc] area */
 .middle-inner {
-    margin-top: 20px;
-    padding-bottom: 20px;
+    /* margin-top: 20px; */
+    /* padding-bottom: 20px; */
+    padding: 20px 0;
 }
 
 .middle-inner__align-center {
