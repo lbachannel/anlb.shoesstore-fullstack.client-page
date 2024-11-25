@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Run auto slide
-    setInterval(autoSlide, 3000); // Update each 3s
+    setInterval(autoSlide, 9000); // Update each 3s
 
     // Handle click on indicator
     indicators.forEach(indicator => {
