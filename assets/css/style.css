@@ -785,9 +785,16 @@
 
 /* Footer */
 .footer {
-    margin-top: 35px;
+    margin-top: 250px;
     padding-top: 35px;
     background: #3D464D;
+    position: relative;
+}
+
+.footer svg {
+    position: absolute;
+    top: -290px;
+    left: 0;
 }
 
 .footer-content-right,
@@ -796,7 +803,10 @@
 }
 
 .footer__row {
+    margin-top: -100px;
     padding: 30px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .footer-text-primary {
