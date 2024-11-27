@@ -936,13 +936,8 @@
     background: transparent;
 }
 
-.product-info__tag {
-    background: var(--product-detail-info-tag-bg-color);
-}
-
 .product-info-content {
     border-radius: 20px;
-    background: var(--product-detail-info-content-bg-color);
 }
 
 .product-properties {
