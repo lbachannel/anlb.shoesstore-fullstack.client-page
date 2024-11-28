@@ -216,7 +216,8 @@
     }
 
     .header.shop .shopping-cart .search-icon {
-        margin-right: 0;
+        margin-right: 10px;
+        padding-top: 6px;
     }
 
     /* Modal show menu */
